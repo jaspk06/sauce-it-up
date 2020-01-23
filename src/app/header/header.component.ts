@@ -7,13 +7,8 @@ import { Recipe } from '../recipe-book/recipe.model';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  @Output() select = new EventEmitter<string>();
-
   constructor() { }
 
   ngOnInit() {
-  }
-  onSelect(page: string) {
-    this.select.emit(page);
   }
 }

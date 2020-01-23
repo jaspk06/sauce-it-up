@@ -22,7 +22,7 @@ export class RecipeService {
       ]
     ),
     new Recipe(
-      'Red bean pancake',
+      'Red Bean Pancake',
       'Yum',
       'https://du7ybees82p4m.cloudfront.net/54f6bceeec9118.78712916.jpg?width=910&height=512',
       [
@@ -41,6 +41,9 @@ export class RecipeService {
   }
   addToShoppingList(ingredients: Ingredient[]) {
     this.shoppingListService.addIngredients(ingredients);
+  }
+  getRecipe(index: number) {
+    return this.recipes[index];
   }
 
 }
