@@ -17,6 +17,7 @@ const appRoutes: Routes = [
     ]
   },
   { path: 'shoppinglist', component: ShoppingListComponent },
+  { path: '**', redirectTo: '/recipes' }
 
 ];
 
